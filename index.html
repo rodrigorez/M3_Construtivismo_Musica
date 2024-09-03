@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo da Header */
+header {
+  background-color: #bdbebf;
+  padding: 1px;
+  text-align: left;
+  font-size: 15px;
+  color: white;
+}
+
+/* Colunas de Produtos */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: #f1f1f1;
+  padding: 20px;
+}
+
+/* Colunas de Produtos */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Estilo do Rodapé */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Duas Colunas */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #bdbebf;} /* Grey */
+</style>
+</head>
+<body>
+
+<header>
+<h2 style="color:#000000;"> loja loja                  <a style="color:#000000;" href="https://www.w3schools.com/">catálogo</a> </h2>
+
+</header>
+
+<figure>
+  <img src="https://d7hftxdivxxvm.cloudfront.net/?height=900&quality=80&resize_to=fill&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2FkT10CvuMfrUzVTsxrCVCWg%252Falexander-rodchenko-books-please-in-all-branches-of-knowledge-1924.jpg&width=1600" style="width:100%; height:100%;">
+</figure>
+
+<button class="button button1">Violões </button>
+<button class="button button1">Guitarras </button>
+<button class="button button1">Teclados </button>
+<button class="button button1">Acessórios </button>
+<button class="button button1">aaaaaaa </button>
+
+  <section>
+  <article>
+    <h1>itens em destaque</h1>
+    <p></p>
+    <p></p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
