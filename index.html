@@ -4,181 +4,111 @@
 <title>CSS Template</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+<style>
+* {box-sizing: border-box;}
+body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Estilo da Header */
-header {
-  background-color:rgb(255, 44, 55);
+header {background-color:rgb(255, 44, 55);
   padding: 1px;
   text-align: left;
   font-size: 15px;
-  color: white;
-}
+  color: white;}
 
 /* Colunas de Produtos */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px;
-  background: #f1f1f1;
-  padding: 20px;
-}
-
-/* Colunas de Produtos */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
+nav ul {list-style-type: none;
+  padding: 0;}
+article {float: left;
   padding: 20px;
   width: 100%;
   background-color: #f1f1f1;
-  height: 300px;
-}
-
-section::after {
-  content: "";
+  height: 400px;}
+section::after {content: "";
   display: table;
-  clear: both;
-}
+  clear: both;}
 
 /* Estilo do Rodapé */
-footer {
-  background-color: rgb(60, 60, 60);
+footer {background-color: rgb(60, 60, 60);
   padding: 1px;
   text-align: center;
   color: white;
   width: 100%;
-  height: auto;
-}
-
-/* Duas Colunas */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-.button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
+  height: auto;}
 .button1 {background-color: #bdbebf;} /* Grey */
 </style>
 </head>
-<body>
 
+<body>
 <header>
-<h1 style="color:#000000;"> LEFT HAND </h1>
-<h2 style="text-align:right;" > &#9776;</h2>
- 
-</header>
+<h1 style="color:#000000;""text-align:right;"> LEFT HAND</h1>
+<h2 style="text-align:right;" ><button>&#9776;</button></h2>
+ </header>
 
 
 <figure>
   <img src="https://d7hftxdivxxvm.cloudfront.net/?height=900&quality=80&resize_to=fill&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2FkT10CvuMfrUzVTsxrCVCWg%252Falexander-rodchenko-books-please-in-all-branches-of-knowledge-1924.jpg&width=1600" style="width:100%; height:100%;">
 </figure>
 
-<a style="color:rgb(255, 44, 55);" href="https://www.w3schools.com/"> <b> CATÁLOGO </b> </a>   &#128722;
+
+<b style="color:rgb(255, 44, 55);">CATÁLOGO &#128722;</b>
 
 <br> </br>
 
-<button type="button button1">Violões</button>
-<button type="button button1">Guitarras</button>
-<button type="button button1">Teclados</button>
-<button type="button button1">Acessórios</button>
-<button type="button button1">Percursão</button>
-<button type="button button1">Sopro</button>
-<button type="button button1">Promoções</button>
-<button type="button button1">Cordas</button>
-<button type="button button1">New</button>
+<button type="button button">Violões</button>
+<button type="button button">Guitarras</button>
+<button type="button button">Teclados</button>
+<button type="button button">Acessórios</button>
+<button type="button button">Percursão</button>
+<button type="button button">Sopro</button>
+<button type="button button">Promoções</button>
 
   <section>
   <article>
-    <h1 style="color:rgb(255, 44, 55);">Itens em destaque </h1>
+    <h1 style="color:rgb(255, 44, 55);text-align:center;">Itens em Destaque</h1>
+    
+    
+    <button style="text-align:right" ><span>&#10094;<button style="text-align:right" ><span>&#10095;</span></button></span></button>
+    
     <br> </br>
-    <p>&#10094;</p>
     
 <style>
-div.gallery {
-  margin: 5px;
+div.gallery { margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
+  width: 180px;}
+div.gallery:hover {border: 1px solid #777;}
+div.gallery img {width: 100%;
+  height: auto;}
+div.desc {padding: 15px;
+  text-align: center;}
 </style>
 </head>
 <body>
 
 <div class="gallery">
-  <a target="_blank" href="img_5terre.jpg">
     <img src="https://akusticamusical.fbitsstatic.net/img/p/guitarra-strinberg-les-paul-lps230lh-preta-canhoto-80094/267584.jpg?w=900&h=900&v=no-change&qs=ignore" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
+  <div class="desc">R$1.500</div>
 </div>
 
 <div class="gallery">
-  <a target="_blank" href="img_forest.jpg">
     <img src="https://images.tcdn.com.br/img/img_prod/1033692/contrabaixo_tagima_canhoto_tjb_535_passivo_sunburst_12251_1_3a69d4fc3e3d13c3a3d196b9c134103d.jpg"  width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
+  <div class="desc">R$5.000</div>
 </div>
 
 <div class="gallery">
-  <a target="_blank" href="https://akusticamusical.fbitsstatic.net/img/p/guitarra-strinberg-les-paul-lps230lh-preta-canhoto-80094/267584.jpg?w=900&h=900&v=no-change&qs=ignore">
-    <img src="https://cdn.awsli.com.br/1000x1000/2611/2611922/produto/225366851efe8e287bd.jpg" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
+    <img src="https://cdn.awsli.com.br/1000x1000/2611/2611922/produto/225366851efe8e287bd.jpg"  width="600" height="400">
+  <div class="desc">R$800</div>
 </div>
 
 <div class="gallery">
-  <a target="_blank" href="img_mountains.jpg">
     <img src="https://static.mundomax.com.br/produtos/82302/550/1.webp"  width="600" height="400">
-  </a>
-  <div class="desc">aaaaaaaaaaaaaaaaa</div>
+  <div class="desc">R$2.000</div>
 </div>
-
    
 </section>
+</article>
    
-   
-
-   
-    <p style="text-align:right" >&#10095;</p>
-
-
-
 <br/>
 
 <footer>
