@@ -5,55 +5,91 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-* {box-sizing: border-box;}
-body {font-family: Arial, Helvetica, sans-serif;}
+    <style>
+        * {box-sizing: border-box;}
+        body {font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0;}
 
-/* Estilo da Header */
-header {background-color:rgb(255, 44, 55);
-  padding: 1px;
-  text-align: left;
-  font-size: 15px;
-  color: white;}
+        /* Estilo da Header */
+        header {
+        background-color: rgb(255, 44, 55);
+            padding: 10px;
+            text-align: left;
+            font-size: 15px;
+            color: white;}
 
-/* Colunas de Produtos */
-nav ul {list-style-type: none;
-  padding: 0;}
-article {float: left;
-  padding: 20px;
-  width: 100%;
-  background-color: #f1f1f1;
-  height: 400px;}
-section::after {content: "";
-  display: table;
-  clear: both;}
+        /* Colunas de Produtos */
+        nav ul {list-style-type: none; padding: 0;}
+        article {padding: 20px;
+            background-color: #f1f1f1;
+            margin-bottom: 20px; /* Adicionado para espaçamento */
+        }
+        section::after {content: ""; display: table; clear: both;}
 
-/* Estilo do Rodapé */
-footer {background-color: rgb(60, 60, 60);
-  padding: 1px;
-  text-align: center;
-  color: white;
-  width: 100%;
-  height: auto;}
-.button1 {background-color: #bdbebf;} /* Grey */
-</style>
+        /* Estilo do Rodapé */
+        footer {
+            background-color: rgb(60, 60, 60);
+            padding: 10px;
+            text-align: center;
+            color: white;
+            width: 100%;
+            height: auto;}
+        
+        /* Estilo do container do catálogo */
+        .catalogo-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgb(255, 44, 55);}
+
+        .catalogo-container b {
+            color: white;
+            font-size: 24px;}
+
+        .catalogo-container button {
+            background-color: transparent;
+            border: none;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;}
+
+        /* Estilo das Galerias */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 10px 0;}
+        .gallery div {
+            margin: 5px;
+            border: 1px solid #ccc;
+            width: 180px;
+            text-align: center;}
+        .gallery img {
+            width: 100%;
+            height: auto;}
+
+        .button1 {background-color: #bdbebf;} /* Grey */
+    </style>
 </head>
 
 <body>
 <header>
-<h1 style="color:#000000;""text-align:right;"> LEFT HAND</h1>
-<h2 style="text-align:right;" ><button>&#9776;</button></h2>
- </header>
+        <h1 style="color:#000000;">LEFT HAND</h1>
+        <figure>
+       <img src= "https://i.postimg.cc/GmJtSngL/left-hand.png"style="width:100%; height:auto;">
+        </figure>
+    </header>
 
-
-<figure>
-  <img src="https://d7hftxdivxxvm.cloudfront.net/?height=900&quality=80&resize_to=fill&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2FkT10CvuMfrUzVTsxrCVCWg%252Falexander-rodchenko-books-please-in-all-branches-of-knowledge-1924.jpg&width=1600" style="width:100%; height:100%;">
-</figure>
-
-
-<b style="color:rgb(255, 44, 55);">CATÁLOGO &#128722;</b>
-
-<br> </br>
+    <figure>
+        <img src="https://i.postimg.cc/0jrzdFVX/export202409231935131755.png" style="width:100%; height:auto;">
+    </figure>
+    
+<!-- Catálogo com o botão ao lado -->
+<div class="catalogo-container">
+<b>CATÁLOGO &#128722;</b>
+<button>&#9776;</button>
+</div>
+<br>
 
 <button type="button button">Violões</button>
 <button type="button button">Guitarras</button>
@@ -63,59 +99,41 @@ footer {background-color: rgb(60, 60, 60);
 <button type="button button">Sopro</button>
 <button type="button button">Promoções</button>
 
-  <section>
-  <article>
-    <h1 style="color:rgb(255, 44, 55);text-align:center;">Itens em Destaque</h1>
+ <section>
+ <article>
+ <h1 style="color:rgb(255, 44, 55);text-align:center;">Itens em Destaque</h1>
+            
+            <button style="text-align:right" ><span>&#10094;<button style="text-align:right" ><span>&#10095;</span></button></span></button>
     
-    
-    <button style="text-align:right" ><span>&#10094;<button style="text-align:right" ><span>&#10095;</span></button></span></button>
-    
-    <br> </br>
-    
-<style>
-div.gallery { margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;}
-div.gallery:hover {border: 1px solid #777;}
-div.gallery img {width: 100%;
-  height: auto;}
-div.desc {padding: 15px;
-  text-align: center;}
-</style>
-</head>
-<body>
+    <br>
 
-<div class="gallery">
-    <img src="https://akusticamusical.fbitsstatic.net/img/p/guitarra-strinberg-les-paul-lps230lh-preta-canhoto-80094/267584.jpg?w=900&h=900&v=no-change&qs=ignore" width="600" height="400">
-  <div class="desc">R$1.500</div>
-</div>
-
-<div class="gallery">
-    <img src="https://images.tcdn.com.br/img/img_prod/1033692/contrabaixo_tagima_canhoto_tjb_535_passivo_sunburst_12251_1_3a69d4fc3e3d13c3a3d196b9c134103d.jpg"  width="600" height="400">
-  <div class="desc">R$5.000</div>
-</div>
-
-<div class="gallery">
-    <img src="https://cdn.awsli.com.br/1000x1000/2611/2611922/produto/225366851efe8e287bd.jpg"  width="600" height="400">
-  <div class="desc">R$800</div>
-</div>
-
-<div class="gallery">
-    <img src="https://static.mundomax.com.br/produtos/82302/550/1.webp"  width="600" height="400">
-  <div class="desc">R$2.000</div>
-</div>
-   
-</section>
-</article>
-   
-<br/>
+   <div class="gallery">
+   <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+   <div>
+   <img src="https://akusticamusical.fbitsstatic.net/img/p/guitarra-strinberg-les-paul-lps230lh-preta-canhoto-80094/267584.jpg?w=900&h=900&v=no-change&qs=ignore">
+   <div class="desc">R$1.500</div>
+   </div>
+   <div>
+   <img src="https://images.tcdn.com.br/img/img_prod/1033692/contrabaixo_tagima_canhoto_tjb_535_passivo_sunburst_12251_1_3a69d4fc3e3d13c3a3d196b9c134103d.jpg">
+   <div class="desc">R$5.000</div>
+   </div>
+   <div>
+   <img src="https://cdn.awsli.com.br/1000x1000/2611/2611922/produto/225366851efe8e287bd.jpg">
+   <div class="desc">R$800</div>
+   </div>
+   <div>
+   <img src="https://static.mundomax.com.br/produtos/82302/550/1.webp">
+   <div class="desc">R$2.000</div>
+   </div>
+   <button class="next" onclick="plusSlides(1)">&#10095;</button>
+   </div>
+   </article>
+   </section>
 
 <footer>
-  <p >CONTATOS</p>
-  <td> <p style="text-align:center;">&#9993; E-mail </p>
-    <td> <p style="text-align:center;">&#9743; Telefone 0000-0000 </a></td>
+<b>CONTATOS</b>
+<p style="text-align:center;">&#9993; E-mail</p>
+<p style="text-align:center;">&#9743; Telefone 0000-0000</p>
 </footer>
-
 </body>
 </html>
